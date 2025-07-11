@@ -4,9 +4,9 @@ build:
   commands:
     build:
       - echo "Building Location Tracker App..."
-      - cd frontend && npm install && npm run build
-      - cd .. && cp -r frontend/build/* static/
+      - echo "Installing Python dependencies..."
       - pip install -r requirements.txt
+      - echo "Build completed successfully!"
 run:
   command: python app.py
   network:
