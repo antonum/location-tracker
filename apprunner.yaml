@@ -5,7 +5,6 @@ build:
     build:
       - echo "Building Location Tracker App..."
 run:
-  runtime-version: latest
   command: python app.py
   network:
     port: 8080
