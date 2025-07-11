@@ -1,0 +1,19 @@
+version: 1.0
+runtime: docker
+build:
+  commands:
+    build:
+      - echo "Building Location Tracker App..."
+run:
+  runtime-version: latest
+  command: python app.py
+  network:
+    port: 8080
+  env:
+    - name: PORT
+      value: "8080"
+    - name: FLASK_ENV
+      value: "production"
+    # DATABASE_URL should be set via AWS App Runner environment variables
+    # Go to App Runner service -> Configuration -> Environment variables
+    # Add: DATABASE_URL = your-database-connection-string

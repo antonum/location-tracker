@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+venv/
+env/
+
+# Environment variables (IMPORTANT: Never commit these)
+.env
+.env.local
+.env.production
+.env.development
+backend/.env
+frontend/.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Database
+*.db
+*.sqlite
+
+# Build outputs
+build/
+dist/
+*.egg-info/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# React
+.eslintcache
+
+# Docker
+.dockerignore
+
+# Temporary files
+*.tmp
+*.temp
